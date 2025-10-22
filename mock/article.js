@@ -3,8 +3,8 @@ const Mock = require('mockjs')
 const List = []
 const count = 100
 
-const baseContent = '<p>I am testing data, I am testing data.</p><p><img src="https://wpimg.wallstcn.com/4c69009c-0fd4-4153-b112-6cb53d1cf943"></p>'
-const image_uri = 'https://wpimg.wallstcn.com/e4558086-631c-425c-9430-56ffb46e70b3'
+const baseContent = '<p>The tech industry continues to evolve at a rapid pace, with artificial intelligence emerging as the central driver of innovation across nearly every sector. From automating workflows in manufacturing and logistics to personalizing customer experiences in retail and finance, AI is reshaping how businesses operate and compete. Companies are increasingly investing in data-driven infrastructure and ethical AI practices to balance efficiency with transparency. As edge computing and quantum technologies advance, the coming years promise even faster, more secure, and more intelligent systems — marking a new era where human creativity and machine intelligence work hand in hand to solve complex global challenges.</p><p><img src="https://www.templeton-recruitment.com/hs-fs/hubfs/insights_from_global_tech_leaders.png?width=1059&height=594&name=insights_from_global_tech_leaders.png"></p>'
+const image_uri = 'https://www.templeton-recruitment.com/hs-fs/hubfs/Future-Tech-Jobs-That-Do-not-Exist-Yet.jpg?width=2400&height=1350&name=Future-Tech-Jobs-That-Do-not-Exist-Yet.jpg'
 
 for (let i = 0; i < count; i++) {
   List.push(Mock.mock({
@@ -12,7 +12,7 @@ for (let i = 0; i < count; i++) {
     timestamp: +Mock.Random.date('T'),
     author: '@first',
     reviewer: '@first',
-    title: '@title(5, 10)',
+    title: 'The Rise of AI: Transforming Industries and Shaping the Future of Technology)',
     content_short: 'mock data',
     content: baseContent,
     forecast: '@float(0, 100, 2, 2)',
