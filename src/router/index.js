@@ -401,4 +401,10 @@ export function resetRouter() {
   router.matcher = newRouter.matcher // reset router
 }
 
+router.afterEach((to) => {
+  if (typeof window !== 'undefined' && window._browsee) {
+    window._browsee('page', to.fullPath)
+  }
+})
+
 export default router
